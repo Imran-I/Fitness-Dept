@@ -1,0 +1,479 @@
+﻿/*@import url('https://fonts.cdnfonts.com/css/capture-it');*/
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+/*@import url(//db.onlinewebfonts.com/c/17a4d79ae5bb1481d79e047948683688?family=Capture+it);*/
+
+body {
+    font-family: 'Manrope' !important;
+}
+::-webkit-scrollbar {
+    height: 8px; /* height of horizontal scrollbar ← You're missing this */
+    width: 8px; /* width of vertical scrollbar */
+    border: 3px solid #e8ecf1;
+}
+.frmContentpage {
+    width: 100% !important;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.LogoText {
+
+    font-family :'Capture it';
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1.2px;
+    color: black;
+}
+
+.Logohead {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+}
+
+a:hover {
+    color: black !important;
+    background-color: #e1e1e1 !important;
+    border-radius: 0.3rem;
+}
+
+.frmcontainer {
+    padding: 2rem;
+    background-color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 1rem;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    padding-bottom: 4rem !important;
+}
+
+.lblstyle {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.NavTextColor {
+    color: black !important;
+    font-size: 14px;
+}
+
+    .NavTextColor:hover {
+        color: black !important;
+    }
+
+.NavSub {
+    font-size: 13px;
+    background: #e1e1e1 !important;
+    border-radius: 5px;
+}
+
+    .NavSub:hover {
+        color: black !important;
+        background-color: #e1e1e1 !important;
+    }
+
+h4 {
+    font-family: 'Manrope';
+    color: black;
+}
+
+h5 {
+    font-family: 'Manrope';
+    color: black;
+}
+
+.pageRoutecol {
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Manrope';
+}
+
+.spanstyle {
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.PageHeader {
+    margin-bottom: 1rem;
+}
+
+.PageSubHeader {
+    font-size: 1rem;
+    color: #5c5c5c;
+    font-weight: 700;
+}
+
+.PageRoute {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.fafaicon {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+}
+
+.AddPlus {
+    font-size: 14px;
+    font-weight: 100 !important;
+}
+/*Required Field*/
+.rfvStyle {
+    font-size: 0.7rem;
+    color: red;
+    float: right;
+}
+
+.reqiredstar {
+    font-weight: 900;
+    color: red;
+}
+/*Required Field End*/
+
+
+/*TextBox*/
+.txtboxdiv {
+    position: relative;
+}
+
+.txtlabel {
+    position: absolute;
+    font-size: 0.8rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #5f6368;
+    font-weight: 500;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: 0.1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+}
+
+.txtbox {
+    font-size: 0.9rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    color: black;
+    font-weight: 500;
+    transition: 0.1s ease-out;
+    background-color: #fff;
+}
+
+    .txtbox:focus {
+        border-color: #000000;
+    }
+
+        .txtbox:focus + .txtlabel {
+            color: #000;
+            top: 0;
+            transform: translateY(-50%) scale(0.9);
+            font-weight: 500;
+        }
+
+    .txtbox:not(:placeholder-shown) + .txtlabel {
+        top: 0;
+        transform: translateY(-50%) scale(0.9);
+    }
+/*TextBox End*/
+/*Dropdown*/
+select {
+    background-color: #fff !important;
+    color: #5f6368 !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    border: 1px solid #d9d9d9 !important;
+}
+
+option[value]::file-selector-button {
+    background-color: red;
+}
+/*Dropdown End*/
+/*CheckBoxList*/
+
+input[type="checkbox"] {
+    margin-right: 0.4rem;
+    margin-left: 0.1rem;
+}
+
+.frmcheckbox {
+    color: #5f6368;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/*CheckBoxList End*/
+
+/*RadioButtonList*/
+input[type="radio"] {
+    margin-right: 0.4rem;
+    margin-left: 0.1rem;
+}
+/*RadioButtonList End*/
+
+/*fileUpload*/
+input[type="file"] {
+    background-color: #ededed;
+    width: 84px;
+    border-radius: 1rem;
+    border: 2px solid;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+    input[type="file"]::file-selector-button {
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+        border-color: #fff;
+    }
+
+/*fileUpload End*/
+/*Button*/
+
+.btnSubmit {
+    border-radius: 2rem;
+    width: 6rem;
+    font-size: 0.9rem;
+    height: 2.3rem;
+    border: 0;
+    background-color: #000000;
+    color: white;
+}
+
+
+
+.btnCancel {
+    border-radius: 2rem;
+    width: 6rem;
+    height: 2.3rem;
+    font-size: 0.9rem;
+    border: 1px solid;
+    background-color: #ffffff;
+    color: black;
+}
+
+
+
+/*Button End*/
+
+
+/*Add Button*/
+.btnAdd {
+    background-color: #000000;
+    font-size: 1rem;
+    border-radius: 1.2rem;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+    .btnAdd:hover {
+        border-radius: 1.2rem !important;
+        color: white !important;
+        background-color: #333333 !important;
+    }
+/*Logo Img*/
+.logoimg {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+}
+
+/*Abhinaya 17NOV2022*/
+.txtlabelPassWord {
+    position: absolute;
+    font-size: 0.8rem;
+    left: 0;
+    top: 39%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #5f6368;
+    font-weight: 500;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: 0.1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+}
+
+.txtboxPassword {
+    font-size: 0.9rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    color: #5f6368;
+    transition: 0.1s ease-out;
+    background-color: #fff;
+}
+
+    .txtboxPassword:focus {
+        border-color: #000000;
+    }
+
+        .txtboxPassword:focus + .txtlabelPassWord {
+            color: #000;
+            top: 0;
+            transform: translateY(-50%) scale(0.9);
+            font-weight: 500;
+        }
+
+    .txtboxPassword:not(:placeholder-shown) + .txtlabelPassWord {
+        top: 0;
+        transform: translateY(-50%) scale(0.9);
+    }
+
+.btnPassWord {
+    height: 36px;
+    width: 37px;
+    padding: 8px !important;
+    border-radius: 5px !important;
+}
+/*Edit And  Delete*/
+.fafaediticon {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.gridActive {
+    background-color: white;
+    padding-bottom: 0.3rem;
+    border: 1px solid;
+    padding-top: 0.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 0.5rem;
+    border-color: #8d8d8d;
+    color: black;
+    font-weight: 700;
+}
+
+    .gridActive:hover {
+        color: white !important;
+        background-color: #2ECC71 !important;
+        border: none;
+    }
+
+.gridDeActive {
+    background-color: white;
+    padding: 0.3rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    border-color: #8d8d8d;
+    color: black;
+    font-weight: 700;
+}
+
+    .gridDeActive:hover {
+        background-color: #db1f1f !important;
+        color: white !important;
+        border: none;
+    }
+
+
+/*Close Btn*/
+.btnclose {
+    font-size: 0.9rem;
+    color: red;
+}
+
+    .btnclose:hover {
+        font-size: 0.9rem;
+        color: red;
+        background-color: white !important;
+    }
+
+.DisplyCard {
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: #000000c7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.DisplyCardPostion {
+    border-width: 0px;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    padding: 0px 50px 0px 50px;
+    background-color: #ffffff;
+    font-size: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11%;
+    border-radius: 25px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.addlblHead {
+    font-size: 0.8rem;
+    color: #404040;
+    font-weight: 700;
+}
+
+    .addlblHead:hover {
+        font-size: 0.8rem;
+        color: #404040 !important;
+        font-weight: 700;
+        background-color: white !important;
+    }
+
+.GridAddBtn {
+    background-color: white;
+    padding-bottom: 0.3rem;
+    border: 1px solid;
+    padding-top: 0.3rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 0.5rem;
+    border-color: #8d8d8d;
+    color: black;
+    font-weight: 700;
+}
+    .GridAddBtn:hover {
+        background-color: white !important;
+    }
+
+
+.backdesign {
+    white-space: normal !important;
+}
+.CtgryDisplyCardPostion {
+    border-width: 0px;
+    position: fixed;
+    width: 70%;
+    height: auto;
+    padding: 0px 50px 0px 50px;
+    background-color: #ffffff;
+    font-size: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11%;
+    border-radius: 25px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

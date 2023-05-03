@@ -1,0 +1,214 @@
+﻿.Termsbody {
+    font-family: "Cabin", sans-serif;;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    background-color: #ffffffd9;
+    /*backdrop-filter: blur(6px);*/
+    /*background-color: #e1e1e2;*/
+    width: 100%;
+    height: 9rem;
+    margin: 0;
+}
+
+.divTermsandCondition {
+    margin-left: 4rem;
+    margin-top: 9rem;
+    margin-right: 2rem;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.terms-title h1 {
+    font-size: 18px;
+    /*    font-family: "RobotoCondensed-Bold";*/
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+
+.terms-body h3 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.terms-body p {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 14px;
+    color: #777;
+    font-weight: 400;
+    text-indent: 30px;
+}
+
+.terms-body a {
+    color: #EB573D;
+}
+
+    .terms-body a:hover {
+        color: #EB573D;
+        text-decoration: none;
+    }
+
+.terms_footer h3 {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: #262626;
+}
+
+    .terms_footer h3 a:link {
+        color: #EB573D;
+        text-decoration: none;
+    }
+
+
+/*Agree*/
+.tacbox {
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    border: 3px solid #ddd;
+    background-color: #eee;
+    /* max-width: 800px;*/
+}
+
+.agree {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
+
+.mycard {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+}
+
+.logoposition{
+    margin-left:2rem;
+}
+
+.signin{
+    margin-right:2rem;
+}
+
+
+#leftImage {
+    top: 106px;
+    right: 0;
+    width: 668px;
+    height: 80%;
+    position: fixed;
+}
+.privacy {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 14px;
+    color: #777;
+    font-weight: 400;
+    text-indent: 30px;
+}
+
+.navbar .navbar-brand img {
+    width: 8rem;
+    height: 7rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        left: 0;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        background-color: #ffffffd9;
+        width: 100%;
+        height: 6rem;
+        margin: 0;
+    }
+
+    .divTermsandCondition {
+        margin-left: 1rem;
+        margin-top: 9rem;
+        margin-right: 2rem;
+    }
+    .logoposition {
+        margin-left: 2rem;
+    }
+
+    .signin {
+        margin-right: 2rem;
+    }
+
+
+    #leftImage {
+        top: 75px;
+        right: 0;
+        width: 200px;
+        height: 80%;
+        position: fixed;
+    }
+    .navbar .navbar-brand {
+        margin-left: 1rem;
+        width: 5rem;
+    }
+    .card-title {
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: black;
+        text-align: center;
+    }
+    .terms-body h3 {
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 16px;
+    }
+    .terms-body p {
+        text-align: justify;
+        line-height: 14px;
+        font-size: 9px;
+        color: #777;
+        font-weight: 400;
+        text-indent: 30px;
+    }
+    .privacy {
+        text-align: justify;
+        line-height: 16px;
+        font-size: 9px;
+        color: #777;
+        font-weight: 400;
+        text-indent: 30px;
+    }
+    .navbar .navbar-brand img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+}

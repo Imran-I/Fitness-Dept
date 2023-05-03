@@ -1,0 +1,49 @@
+﻿.Count_Container {
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+    background: #f1f3f5;
+}
+
+    .Count_Container
+    .divCountAndDescription {
+        display: block;
+        text-align: center;
+    }
+
+    .Count_Container
+    .Icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .Count_Container
+    .divCountAndDescription
+    .count {
+        font-size: 30px;
+        color: #212529;
+    }
+
+        .Count_Container
+        .divCountAndDescription
+        .count:hover {
+            font-size: 30px;
+            color: #2196f3 !important;
+            background-color: transparent !important;
+        }
+
+    .Count_Container
+    .divCountAndDescription
+    .description {
+        font-size: 14px;
+        color: #868e96;
+        font-weight: 600;
+    }
+
+/*GoBack Button Container*/
+.divGoBack_Container {
+    margin-left: auto;
+    text-align: right;
+}

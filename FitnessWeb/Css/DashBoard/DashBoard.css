@@ -1,0 +1,641 @@
+﻿
+body{
+    overflow-x:hidden;
+}
+
+/*GoBack Button Container*/
+.divGoBack_Container {
+    margin-left: auto;
+    text-align: right;
+}
+
+/*New design for admin by Imran*/
+.divadminslot {
+    display: flex;
+    justify-content: center;
+}
+
+.trainerreassign {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    background-color: #ffffff;
+}
+.datagridHeadter {
+    background-color: #efefef;
+}
+/*New design for admin by Imran*/
+
+
+
+.frmcontainer {
+    padding: 2rem;
+    background-color: #f6f7fb !important;
+    box-shadow: none;
+    border-radius: 1rem;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    padding-bottom: 4rem !important;
+}
+
+.lblSlotHead {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+.ddlSlot {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    padding-bottom: 2.6rem;
+    position: relative;
+}
+
+.divSlotList {
+    overflow: auto;
+}
+
+.ddlSlotBtn {
+    position: relative;
+    display: flex;
+    gap: 0.3rem;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    color: black;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 4.2rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    justify-content: center;
+}
+
+    .ddlSlotBtn:hover {
+        position: relative;
+        display: flex;
+        gap: 0.3rem;
+        text-align: center;
+        border: 1px solid #b3b3b3;
+        padding: 0.4rem;
+        border-radius: 1rem;
+        color: black;
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        width: 4.2rem;
+        font-size: 0.7rem;
+        font-weight: 800;
+        justify-content: center;
+    }
+
+.ddlSlotBtnSelect {
+    position: relative;
+    display: flex;
+    gap: 0.3rem;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    color: white;
+    background: #686565;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 4.2rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    justify-content: center;
+}
+
+    .ddlSlotBtnSelect:hover {
+        position: relative;
+        display: flex;
+        gap: 0.3rem;
+        text-align: center;
+        border: 2px solid #ffffff;
+        padding: 0.4rem;
+        border-radius: 1rem;
+        color: white;
+        background: #686565;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        width: 4.2rem;
+        font-size: 0.7rem;
+        font-weight: 800;
+        justify-content: center;
+    }
+
+
+.lblWorkouthead {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: black;
+}
+
+.lblWorkCat {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: black;
+}
+
+.lblDone {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+.chkBokDone {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+.lblWrkName {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: black;
+}
+.lblOverAllWorkout {
+    font-size: 0.7rem;
+    color: black;
+    font-weight: 800;
+}
+@keyframes growProgressBar {
+    0%, 33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="progressbar"] {
+    --size: 5rem;
+    --fg: #000;
+    --bg: #000;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(#3e2cc1 calc(var(--pgPercentage) * 1%), #bac2d7 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    div[role="progressbar"]::before {
+        counter-reset: percentage var(--value);
+        content: counter(percentage) '%';
+    }
+
+.divProgress {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    margin-left: 0rem;
+    position: relative;
+    padding-bottom: 1.4rem;
+}
+
+.lbloverAll {
+    font-size: 1rem;
+    font-weight: 900;
+    color: black;
+}
+
+
+@property --p {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
+.pie {
+    --p: 20;
+    --b: 7px;
+    --c: darkred;
+    --w: 6rem;
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+    .pie:before,
+    .pie:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .pie:before {
+        inset: 0;
+        background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+        -webkit-mask: radial-gradient( farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)) );
+        mask: radial-gradient( farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)) );
+    }
+
+    .pie:after {
+        inset: calc(50% - var(--b) / 2);
+        background: var(--c);
+        transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+    }
+
+.animate {
+    animation: p 3s 1 forwards;
+}
+
+
+
+progress {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+}
+
+    progress::-webkit-progress-bar {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+    }
+
+    progress::-webkit-progress-value {
+        background-color: #42782E;
+        border-radius: 10px;
+        transition: width 2.2s ease-in-out 0s;
+    }
+
+.progressBar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+}
+
+    .progressBar::-webkit-progress-value {
+        background-color: #F85757;
+        border-radius: 10px;
+        transition: width 2.2s ease-in-out 0s;
+    }
+
+.progressBarFull {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+}
+
+    .progressBarFull::-webkit-progress-value {
+        background: rgb(253, 60, 151);
+        border-radius: 10px;
+        transition: width 2.2s ease-in-out 0s;
+    }
+
+.progressBarMid {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+}
+
+    .progressBarMid::-webkit-progress-value {
+        background: rgb(109, 129, 245);
+        border-radius: 10px;
+        transition: width 2.2s ease-in-out 0s;
+    }
+
+.progressBar34 {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 20%);
+}
+
+    .progressBar34::-webkit-progress-value {
+        background: rgb(13, 200, 222);
+        border-radius: 10px;
+        transition: width 2.2s ease-in-out 0s;
+    }
+
+
+.divUser {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    margin-top: 0.5rem;
+    background-color: #efefef;
+}
+
+
+
+
+.lblWaorkCatName {
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.lblWorkOutName {
+    color: black;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.lblSetName {
+    color: black;
+    margin-right: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+.dtlUserList {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: white;
+    margin-bottom: 0.5rem;
+}
+
+.lbluserName {
+    font-size: 1rem;
+    color: black;
+    font-weight: 800;
+}
+
+.progress-bar-container {
+    position: relative;
+    text-align: center;
+}
+
+.divUserList {
+}
+
+.lblUserListHead {
+    margin: 1rem;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.divuserworkOutdtl {
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+.dtlUser {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.divuserListSub {
+    background: #f5f5ff;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: .3s;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.lnkUser {
+    color: #67349d !important;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+    .lnkUser:hover {
+        color: #67349d !important;
+        font-size: 0.8rem;
+        font-weight: 700;
+        background-color: snow !important;
+    }
+
+.lblPresent {
+    font-size: 0.7rem;
+    color: black;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-bottom: 0.2rem;
+}
+
+.divWorkOut {
+    border-radius: 0.5rem;
+    overflow: auto;
+}
+
+.lbloverAllatt {
+    font-size: 1rem;
+    font-weight: 900;
+    color: black;
+    margin: 1rem;
+}
+
+
+
+/*Toggle*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(255deg, rgb(116 116 116) 0%, rgb(64 64 64) 50%, rgba(136,136,136,1) 100%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background: linear-gradient(255deg, rgba(0,65,128,1) 0%, rgba(0,129,255,1) 50%, rgba(0,65,128,1) 100%);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background: linear-gradient(255deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 50%, rgba(224,224,224,1) 100%);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+/*Toggle end*/
+
+.dtlWorkList {
+    padding-right: 2rem;
+    margin: 0.8rem;
+}
+
+.divUserAtt {
+    margin-top: 5.1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.lblAtt {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: black;
+}
+
+
+
+.vl {
+    border-left: 4px solid #303030;
+    height: -webkit-fill-available;
+    position: absolute;
+    left: 50%;
+    margin-left: 5px;
+    top: 0.7rem;
+    bottom: 0.7rem;
+}
+/*Semi Circle*/
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 10rem;
+    height: 5rem;
+    background-color: white;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    border: 10px solid #1936ff;
+    border-bottom: 0;
+    transition: all 1s ease;
+    transform-origin: bottom;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-180deg);
+    bottom: 0;
+    left: -10px;
+}
+
+.circle-out {
+    width: 10rem;
+    height: 5rem;
+    background-color: white;
+    border-top-left-radius: 15rem;
+    border-top-right-radius: 15rem;
+    border: 10px solid #ededed;
+    border-bottom: 0;
+    position: relative;
+}
+
+.text {
+    font-size: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: black;
+}
+
+
+
+
+
+.progress3 {
+    position: relative;
+    margin: 4px;
+    float: left;
+    text-align: center;
+}
+
+.barOverflow3 { /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 10rem;
+    height: 5rem; /* Half circle (overflow) */
+    margin-bottom: -14px; /* bring the numbers up */
+}
+
+.bar3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 10rem; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid #ededed;
+    border-bottom-color: #1936ff;
+    border-right-color: #1936ff;
+}
+.divOverallProgress {
+    display: flex;
+    justify-content: center;
+}
+.spOverallPresentage {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 700;
+}

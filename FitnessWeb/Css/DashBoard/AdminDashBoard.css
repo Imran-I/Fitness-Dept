@@ -1,0 +1,32 @@
+﻿
+.dtladmintrainer {
+    text-align: center;
+}
+
+
+.divtrainerListSub {
+    background: #f5f5ff;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: .3s;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.divtrainerListSub {
+    background: #f5f5ff;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: .3s;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    /*padding-right: 2rem;*/
+}
+
+.PageHeaderadmin {
+    margin-bottom: 2.2rem;
+}
